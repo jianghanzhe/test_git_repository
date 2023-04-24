@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>社区新闻</title>
+    <style> 
+    li {
+        font-size: 50px;
+    }
+
+
+    .master-1{
+        color: aqua;
+        font-size: 12px;
+    }
+
+      /*             #ID选择器{                 样式：属性；             }         */  
+
+
+    #li-8{
+        font-size: 100px;
+        color: blue;
+    }
+
+      /*         样式的优先级(由高到低)： 
+    行内样式->id选择器->类选择器->标签选择器         */  
+        /*             伪类                 一般情况下是针对超链接 
+       选择器名称:hover     鼠标经过的时候 
+       选择器名称:active    点击的一瞬间 
+        选择器名称:link      超链接普通的样式      选择器名称:link=a 
+        选择器名称:visited   点击过后的样式         */  
+    a:link {
+        color: aquamarine;
+         text-decoration: none;
+    }
+
+      a:hover {
+         font-size: 100px;
+         text-decoration: underline;
+        }
+
+      a:active {
+         font-size: 300px;
+         color: #000;
+
+
+        /*FF0FF0             000000  */
+    }
+
+      a:visited {
+         color: #f0f0ff;
+    }
+
+       .a2 {
+         color: red;
+         font-size: 100px;
+
+    }
+
+      .a1 {
+       font-size: 30px;
+    }
+
+      /*         样式的集体声明          */  
+    .a10, .a11 {
+    font-size: 20px;
+    }
+
+      /*         嵌套声明             标签之间的嵌套关系         */  
+    .a12 h6 {
+       font-size: 25px;
+        color: red;
+    }
+
+      h6 .a12 {
+
+     }
+
+         </style>
+</head>
+<body>
+<!--     段落  <p></p>     换行  <br>     标题  <h1></h1>~<h6></h6>     范围  <span></span>     字体加粗    <strong></strong>     字体  <font></font>     表格  <table></table>     行   <tr></tr>   列   <td></td>     有序  <ol></ol>   列表项 <li></li>     无序  <ul></ul>     自定义 <dl></dl>   自定义标题   <dt></dt>   自定义描述   <dd></dd>     表单  <form></form>         选择器 <select></select>             选项  <option></option>         单选按钮    <input type="raido">         复选框     <input type="checkbox">         提交按钮    <input type="submit">     内嵌框架    <iframe></iframe>     超链接 <a></a>     图片  <img>     空格  &nbsp;     样式的分类         内部样式             行内             内嵌         外部样式     css样式选择器         标签         .类 -> 应用的时候在开始标签使用class 属性"  class="类名" " -->
+<li><a href="#">welcome to 石家庄</a></li>
+<li><a href="#">2</a></li>
+<li class="a11">3</li>
+<li class="a10">4</li>
+<li class="a12"><h6>5</h6></li>
+<li class="master-1" id="li-6" style="color: burlywood">6</li>
+<li class="a12">7</li>
+<li id="li-8">8</li>
+<li class="a12"><h6>9</h6></li>
+<li class="a2 a1">10</li>
+<li><h6>1<span class="a12">1</span></h6></li>
+<span class="a12">你<h6>好</h6></span>
+
+<!--   定位->position   可以让块级标签移动位置   方向：上 右 下 左    分类： 
+absolute->绝对定位       看父标签有没有定位属性，如果有，就在父标签进行定位，如果父标签没有定位属性，就看父父标签，如果       父父标签没有定位，则最终看浏览器的  
+fixed->固定定位       看浏览器   
+relative->相对定位       只看自身和父标签以及浏览器没有半毛钱关系 -->
+
+
+</body>
+</html>
